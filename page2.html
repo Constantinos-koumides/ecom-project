@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+</head>
+<body>
+    <label>
+        <input class="menu-btn" type="checkbox">
+        <div class="toggle">
+            <span class="top_line common"></span>
+            <span class="middle_line common"></span>
+            <span class="bottom_line common"></span>
+        </div>
+        <div class="slide">
+            <h1>Mespresso</h1>
+            <ul>
+                <li><a href="testfile.html">Home</a></li>
+                <li><a href="page2.html">Order now</a></li>
+                <li><a href="#About">About us</a></li>
+                <li><a href="#cont">Contacts</a></li>
+            </ul>
+        </div>
+    </label>
+
+    <header>
+        <div class="nav container">
+            <a href="." class="logo">Mespresso</a>
+            <i class='bx bx-shopping-bag' id="cart-icon" data-quantitiy="0"></i>
+            <div class="cart">
+                <h2 class="cart-title">Your Bag</h2>
+                <div class="cart-content">
+                    
+                </div>
+                
+                <div class="total">
+                    <div class="total-title">Total</div>
+                    <div class="total-price">€0</div>
+                </div>
+                <div id="paypal-button-container"></div>
+                <i class='bx bx-x' id="close-cart"></i>
+            </div>
+        </div>
+    </header>
+    <section class="shop container">
+        <h2 class="section-title">Products</h2>
+        <div class="shop-content">
+            <div class="product-box">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgkpA7PaDwWQlVMX3JsZMcB9jcMtpq8O19t_6OQl1vZ590S5JFBUDBve6cSwDxjR783zDeuL_KlA-7XismRatQ4x62pThMJ9dvl4N8IreTbrNKi_73m3E6MfsaSgirQ1LsughyphenhyphenB1wq54WI9mkpuBTjambosa1gkmUPX2UHdiKxcfFDOj-ct5jfcoh8I2t1e/s1919/crepe1.jpg" 
+                    alt="" class="product-img"/>
+                <h2 class="product-title">Classic Crepe1</h2>
+                <span class="price">€0.15</span>
+                <div class="product-s">
+                    <p>Size</p>   
+                    <select class="product-size">                 
+                       <option value="Small">Small</option>
+                       <option value="Medium">Medium</option>
+                       <option value="Large">Large</option>
+                    </select>
+                   </div>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <div class="product-box">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgkpA7PaDwWQlVMX3JsZMcB9jcMtpq8O19t_6OQl1vZ590S5JFBUDBve6cSwDxjR783zDeuL_KlA-7XismRatQ4x62pThMJ9dvl4N8IreTbrNKi_73m3E6MfsaSgirQ1LsughyphenhyphenB1wq54WI9mkpuBTjambosa1gkmUPX2UHdiKxcfFDOj-ct5jfcoh8I2t1e/s1919/crepe2.jpg" 
+                    alt="" class="product-img"/>
+                <h2 class="product-title">Classic Crepe2</h2>
+                <span class="price">€1</span>
+                <div class="product-s">
+                    <p>Size</p>   
+                    <select class="product-size">                 
+                       <option value="Small">Small</option>
+                       <option value="Medium">Medium</option>
+                       <option value="Large">Large</option>
+                       </select>
+                   </div>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <div class="product-box">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhIWxdIrxSCRFHecAFrjkpAbuYkAwUX_DNTF2wBVAPjEUPqsLNiBtWaxwEWmtchAU22A_L9phhowPXS8WTknmh3eZB4LF46qh0OQA0Bt5uHGrsZKM0OGTrP27LYkAIq7Y0MEd1zQOj7-ApHzfiS4sfAjTqpn5iXD6MUgtjHnTVoSFghxRyPdvzJ_p4vMq1k/s4195/crepe3.JPG" 
+                    alt="" class="product-img"/>
+                <h2 class="product-title">Classic Crepe3</h2>
+                <span class="price">€1</span>
+                <div class="product-s">
+                 <p>Size</p>   
+                 <select class="product-size">                 
+                    <option value="Small">Small</option>
+                    <option value="Medium">Medium</option>
+                    <option value="Large">Large</option>
+                    </select>
+                </div>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+    <script src="https://www.paypal.com/sdk/js?client-id=AY9FDFlteLESJyhs9lkMw5jn99JMHNdDVUm69Cw9-upBAqgp4sT0B5TQV-a4Kx6v2Vi7yxlGzhWURt9i&currency=EUR"></script>
+
+</body>  
+</html> 
+

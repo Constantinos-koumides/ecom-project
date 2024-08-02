@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles2.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+  <body>
+    <label>
+      <input class="menu-btn" type="checkbox">
+      <div class="toggle">
+          <span class="top_line common"></span>
+          <span class="middle_line common"></span>
+          <span class="bottom_line common"></span>
+      </div>
+      <div class="slide">
+          <h1>Mespresso</h1>
+          <ul>
+              <li><a href="testfile.html">Home</a></li>
+              <li><a href="page2.html">Order now</a></li>
+              <li><a href="#About">About us</a></li>
+              <li><a href="#cont">Contacts</a></li>
+          </ul>
+      </div>
+    </label>
+    <div>
+    <video autoplay loop muted src="0519.mp4"></video>
+    <section class="heropage">
+ 
+      <div class="text-overlay">
+       <h1>Welcome to Mespresso</h1>
+        <p>Enjoy the best coffee experience</p>
+       <a href="page2.html"  class="btn btn-primary">Order now</a>
+      </div>
+
+    </section>
+    
+    <section class="par1">
+      <div class="container">
+       
+        <div class="text-content">
+        
+          <h2 id="About">Your Heading</h2>
+          <p>Welcome to Mespresso, where culinary delight meets cozy ambiance. Nestled in the heart of the city, our creperie is a haven for crepe enthusiasts and coffee lovers alike. At Mespresso, we pride ourselves on crafting delectable, made-to-order crepes using the finest ingredients, accompanied by our expertly brewed coffee. Whether you're in the mood for a sweet treat or a savory bite, our diverse menu offers something to tantalize every palate. Join us for a memorable dining experience, where every visit feels like a warm, delicious escape.</p>
+        </div>
+       <img src="crepe4.JPG" alt="Description of image" class="side-image">
+      </div>
+      
+    </section> 
+    <section class="par2">
+      <div class="container2">
+       
+        <div class="text-content2">
+        
+          <h2>Your Heading</h2>
+          <p>At Mespresso, we pride ourselves on crafting delectable, made-to-order crepes using the finest ingredients, accompanied by our expertly brewed coffee. Whether you're in the mood for a sweet treat or a savory bite, our diverse menu offers something to tantalize every palate. Join us for a memorable dining experience, where every visit feels like a warm, delicious escape.</p>
+          
+        </div>
+        
+      </div>
+      
+    </section>
+    <section class="par3">
+     <div class="container3">
+     
+       <div class="text-content2">
+      
+          <h2 id="cont">Contacts</h2>
+          <a href="https://www.instagram.com/constantinos_koum/"><i2 class="icons fa-brands fa-instagram icon-cont"></i2></a>
+          <a href="mailto:const09kk@gmail.com"><i2 class="icons i2 fa-solid fa-envelope icon-cont"></i2></a>
+         <a href="const09kk@gmail.com"><i2 class="icons i2 fa-brands fa-tiktok icon-cont"></i2></a>
+        
+        </div>
+      
+      </div>
+    
+    </section>
+    <script>
+      function handleResize() {
+          if (window.innerWidth <= 550) {
+              document.querySelector('.par1').innerHTML = `
+                  <div class="container">
+                      <div class="text-content">
+                          <h2>Your Heading</h2>
+                          <p>At Mespresso, we pride ourselves on crafting delectable, made-to-order crepes using the finest ingredients, accompanied by our expertly brewed coffee. Whether you're in the mood for a sweet treat or a savory bite, our diverse menu offers something to tantalize every palate. Join us for a memorable dining experience, where every visit feels like a warm, delicious escape.</p>
+                          <img src="crepe4.jpg" alt="Description of image" class="side-image">
+                      </div>
+                  </div>
+              `;
+          } else {
+              document.querySelector('.par1').innerHTML = `
+      <div class="container">
+       
+        <div class="text-content">
+        
+          <h2 id="About">Your Heading</h2>
+          <p>Welcome to Mespresso, where culinary delight meets cozy ambiance. Nestled in the heart of the city, our creperie is a haven for crepe enthusiasts and coffee lovers alike. At Mespresso, we pride ourselves on crafting delectable, made-to-order crepes using the finest ingredients, accompanied by our expertly brewed coffee. Whether you're in the mood for a sweet treat or a savory bite, our diverse menu offers something to tantalize every palate. Join us for a memorable dining experience, where every visit feels like a warm, delicious escape.</p>
+        </div>
+       <img src="crepe4.JPG" alt="Description of image" class="side-image">
+      </div>
+              `;
+          }
+      }
+
+      window.addEventListener('resize', handleResize);
+      document.addEventListener('DOMContentLoaded', handleResize);
+  </script>
+ 
+  </body>
+</html>
+
+ 
+    
