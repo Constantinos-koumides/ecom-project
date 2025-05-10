@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="app.css">
+    <title>Document</title>
+    <style>/*.box---for static animation {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 30px;
+        height: 30px;
+        background-color: turquoise;
+        border-radius: 6px;
+        z-index: 10;
+        animation: move 0.75s ease;
+        animation-fill-mode: forwards;
+        
+    }
+    @keyframes move {
+        0%{
+            transform: translateY(0%);
+        }
+    
+        100%{
+            transform: translateY(-500%);
+            transition: all 0.75s ease-in-out;
+        }
+    }*/
+    /*.box -- scroll animation {
+        top: 100vh;
+        opacity: 0;
+        transform: translateY(200px);
+        transition: all 2s ease-in;
+        color: white;
+      }
+      
+      .box.show {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    */</style>
+</head>
+<body>
+    <div class="box">Hello</div>
+</body>
+<script>
+    const boxes = document.querySelectorAll('.box');
+  
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+            observer.unobserve(entry.target); // optional: animate only once
+        }
+      });
+    });
+  
+    boxes.forEach(box => observer.observe(box));
+  </script>
+</html>
